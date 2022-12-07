@@ -12,7 +12,7 @@ In your Python program entry
 
 ```python
 # entry.py
-from amap import amap
+from amap_holydragon.amap import amap
 
 if __name__ == '__main__':
     amap()
