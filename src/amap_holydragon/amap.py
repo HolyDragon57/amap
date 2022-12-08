@@ -72,8 +72,8 @@ def amap_output(target_host, arguments):
 
 def get_standard_output(result, execute_time):
     output = "Starting Amap 1.0.0 ( https://github.com/holydragon57/amap ) at " + \
-            strftime("%Y-%m-%d %H:%M", localtime()) + " 中国标准时间\n" + \
-            "Amap scan report for "
+             strftime("%Y-%m-%d %H:%M", localtime()) + " 中国标准时间\n" + \
+             "Amap scan report for "
     if result['domain'] != '':
         output += result['domain'] + " (" + result['ip'] + ")\n"
     else:
@@ -141,7 +141,8 @@ def output_to_xml(result, filename, start_time, end_time):
     finished = xml_file.createElement("finished")
     finished.setAttribute("time", str(round(end_time)))
     finished.setAttribute("timestr", timestr)
-    finished.setAttribute("summary", "Amap done at "+timestr+"; 1 IP address (1 host up) scanned in "+str(execute_time)+" seconds")
+    finished.setAttribute("summary", "Amap done at " + timestr + "; 1 IP address (1 host up) scanned in " +
+                          str(execute_time) + " seconds")
     finished.setAttribute("elapsed", str(execute_time))
     finished.setAttribute("exit", "success")
 
@@ -158,4 +159,4 @@ def output_to_xml(result, filename, start_time, end_time):
 
     filepath = "./" + filename
     fp = open(filepath, "w")
-    xml_file.writexml(fp, addindent="   ",newl="\n", encoding="UTF-8")
+    xml_file.writexml(fp, addindent="   ", newl="\n", encoding="UTF-8")

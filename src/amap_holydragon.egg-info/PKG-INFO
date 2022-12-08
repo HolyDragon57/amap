@@ -1,3 +1,17 @@
+Metadata-Version: 2.1
+Name: amap-holydragon
+Version: 1.0.3
+Summary: A CLI tool to scan IP addresses or domain names.
+Author-email: Zhang Jian <alexwayne.zj@gmail.com>
+Project-URL: Homepage, https://github.com/holydragon57/amap
+Project-URL: Bug Tracker, https://github.com/holydragon57/amap/issues
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # AMAP
 
 ## Introduction

@@ -1,0 +1,2 @@
+[console_scripts]
+amap = amap_holydragon.amap:amap
